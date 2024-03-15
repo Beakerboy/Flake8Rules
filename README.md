@@ -1,4 +1,4 @@
-# Flake8 Rules
+# VBA-Linter Rules
 
 Documentation and examples for the rules in [Flake8](http://flake8.pycqa.org/en/latest/index.html) ([pyflakes](https://github.com/PyCQA/pyflakes), [pycodestyle](http://pycodestyle.pycqa.org/en/latest/), and [mccabe](https://github.com/pycqa/mccabe)).
 
