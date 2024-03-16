@@ -25,7 +25,7 @@ layout: default
   <table class="rules-table">
     <tbody>
       {% for rule in site.rules %}
-        {% if rule.code contains 'E1' %}
+        {% if rule.code startswith 'E1' %}
           {% include rule-row.html rule=rule %}
         {% endif %}
       {% endfor %}
