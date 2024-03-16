@@ -34,25 +34,29 @@ layout: default
     </tbody>
   </table>
 
-  <h2 id="pyflakes">pyflakes</h2>
+  <h2 id="pyflakes">200 Parameter / Keyword errors</h2>
 
   <table class="rules-table">
     <tbody>
       {% for rule in site.rules %}
-        {% if rule.code contains 'F' %}
-          {% include rule-row.html rule=rule %}
+        {% if rule.code contains 'E2' %}
+          {% unless rule.code contains 'O' %}
+            {% include rule-row.html rule=rule %}
+          {% endunless%}
         {% endif %}
       {% endfor %}
     </tbody>
   </table>
 
-  <h2 id="mccabe">mccabe</h2>
+  <h2 id="mccabe">300 Expression Errors</h2>
 
   <table class="rules-table">
     <tbody>
       {% for rule in site.rules %}
-        {% if rule.code contains 'C' %}
-          {% include rule-row.html rule=rule %}
+        {% if rule.code contains 'E3' %}
+          {% unless rule.code contains 'O' %}
+            {% include rule-row.html rule=rule %}
+          {% endunless%}
         {% endif %}
       {% endfor %}
     </tbody>
