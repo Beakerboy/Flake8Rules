@@ -1,12 +1,12 @@
 # Site settings
-title: Flake8 Rules
-email: grantmcconnaughey@gmail.com
+title: VBA Linter Rules
+email: beakerboy99@yahoo.com
 description: >- # this means to ignore newlines until "baseurl:"
   Descriptions and examples for each of the rules in Flake8 (pyflakes, pycodestyle, and mccabe).
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://www.flake8rules.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: gmcconnaughey
-github_username:  grantmcconnaughey
+baseurl: "/vba-linter-rules" # the subpath of your site, e.g. /blog
+url: "https://beakerboy.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: beakerboy
+github_username:  Beakerboy
 google_analytics: UA-51900491-5
 
 # Build settings
