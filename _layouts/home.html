@@ -26,12 +26,12 @@ layout: default
     </div>
   </div>
 
-  <h2 id="pycodestyle">Microsoft IDE</h2>
+  <h2 id="pycodestyle">100 Character Errors</h2>
 
   <table class="rules-table">
     <tbody>
       {% for rule in site.rules %}
-        {% if rule.code contains 'E' or rule.code contains 'W' %}
+        {% if rule.code contains 'E1' %}
           {% include rule-row.html rule=rule %}
         {% endif %}
       {% endfor %}
