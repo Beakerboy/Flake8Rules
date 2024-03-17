@@ -19,7 +19,7 @@ layout: default
     </div>
   </div>
 
-  <h2 id="pycodestyle">100 Character Errors</h2>
+  <h2 id="100">100 Character Errors</h2>
 
   <table class="rules-table">
     <tbody>
@@ -33,7 +33,7 @@ layout: default
     </tbody>
   </table>
 
-  <h2 id="pyflakes">200 Parameter / Keyword errors</h2>
+  <h2 id="200">200 Parameter / Keyword errors</h2>
 
   <table class="rules-table">
     <tbody>
@@ -47,7 +47,7 @@ layout: default
     </tbody>
   </table>
 
-  <h2 id="mccabe">300 Expression Errors</h2>
+  <h2 id="300">300 Expression Errors</h2>
 
   <table class="rules-table">
     <tbody>
@@ -61,4 +61,17 @@ layout: default
     </tbody>
   </table>
 
+  <h2 id="400">400 Line Errors</h2>
+
+  <table class="rules-table">
+    <tbody>
+      {% for rule in site.rules %}
+        {% if rule.code contains 'E4' %}
+          {% unless rule.code contains 'O' %}
+            {% include rule-row.html rule=rule %}
+          {% endunless%}
+        {% endif %}
+      {% endfor %}
+    </tbody>
+  </table>
 </div>
