@@ -74,4 +74,60 @@ layout: default
       {% endfor %}
     </tbody>
   </table>
+
+  <h2 id="500">500 Control Structure / Statement Errors</h2>
+
+  <table class="rules-table">
+    <tbody>
+      {% for rule in site.rules %}
+        {% if rule.code contains 'E5' %}
+          {% unless rule.code contains 'O' %}
+            {% include rule-row.html rule=rule %}
+          {% endunless%}
+        {% endif %}
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <h2 id="600">600 Procedure Errors</h2>
+
+  <table class="rules-table">
+    <tbody>
+      {% for rule in site.rules %}
+        {% if rule.code contains 'E6' %}
+          {% unless rule.code contains 'O' %}
+            {% include rule-row.html rule=rule %}
+          {% endunless%}
+        {% endif %}
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <h2 id="700">700 Module Errors</h2>
+
+  <table class="rules-table">
+    <tbody>
+      {% for rule in site.rules %}
+        {% if rule.code contains 'E7' %}
+          {% unless rule.code contains 'O' %}
+            {% include rule-row.html rule=rule %}
+          {% endunless%}
+        {% endif %}
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <h2 id="900">900 Syntax Errors</h2>
+
+  <table class="rules-table">
+    <tbody>
+      {% for rule in site.rules %}
+        {% if rule.code contains 'E9' %}
+          {% unless rule.code contains 'O' %}
+            {% include rule-row.html rule=rule %}
+          {% endunless%}
+        {% endif %}
+      {% endfor %}
+    </tbody>
+  </table>
 </div>
